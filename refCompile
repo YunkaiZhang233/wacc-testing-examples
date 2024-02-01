@@ -100,11 +100,11 @@ end
 files.each do |file_path|
   puts "calling the reference compiler on #{file_path}"
   
-  # get stdin from the user to pass to the reference compiler
+  # get stdin from the user to pass to the reference compiler (removing any trailing newlines)
   stdin = ""
   if $options[:execute] then
     puts "please provide a stdin stream to use when executing the program:"
-    stdin = STDIN.gets
+    stdin = STDIN.gets.rstrip
   end
 
   # make the call to the reference compiler
