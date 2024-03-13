@@ -1,9 +1,9 @@
 # Illustrating Constant Folding Optimisations
+# For Integer Calculation
 
 # Output:
 # 202
 # 68
-# true
 #
 
 # Program:
@@ -15,7 +15,5 @@ begin
     println x;
     int y = (777 - 433) % (5 - 1) + 68; # y = 68
     println y;
-    bool z = (277 != 99) && (777 + 1 == 778);
-    println z;
     skip
 end
